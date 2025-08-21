@@ -1,0 +1,9 @@
+@mixin setDisplay ($display: flex,
+    $direction: row,
+    $justify: null,
+    $align: null) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

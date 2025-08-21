@@ -1,0 +1,70 @@
+@use '../abstracts/' as *;
+
+body {
+    background-image: url(../../assets/images/background-movies-series.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 5%;
+    transition: background 1s;
+}
+
+main {
+    padding: 1.5rem;
+    width: 100vw;
+    max-width: 100%;
+    // height: 80vh;
+    position: relative;
+    top: 10rem;
+
+    @include setDisplay(flex, column, center, center);
+}
+
+.form__container {
+    padding: 2.5rem;
+    margin: 0 auto;
+    height: 70%;
+    min-width: 18rem;
+    max-height: 26.5rem;
+    width: 100%;
+    max-width: 50rem;
+    background: var(--form-bg-color);
+    border-radius: .5rem;
+
+    @include setDisplay(flex, column);
+    gap: 1.6rem;
+}
+
+.login {
+
+    &__title {
+        letter-spacing: 2px;
+        margin-bottom: 1.2rem;
+    }
+
+    &__email[type="email"]:invalid {
+        border: 2px solid var(--form-field-error);
+    }
+
+    &__password[type="password"]:invalid {
+        border: 2px solid var(--form-field-error);
+    }
+}
+
+.links {
+
+    &__container {
+        margin-top: 1.6rem;
+        min-width: 18rem;
+
+        @include setDisplay(flex, row, null, center);
+        gap: 0 2rem;
+    }
+
+    &__forget a {
+        color: var(--link-color);
+    }
+
+    &__forget a:hover {
+        opacity: .7;
+    }
+}

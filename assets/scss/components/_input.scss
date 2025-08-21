@@ -1,0 +1,25 @@
+
+.input-style{
+    width: 100%;
+    height: 3.31rem;
+    border-radius: .4rem;
+    padding: .8rem;
+    border: var(--form-field-border);
+    color: white;
+    background-color: var(--form-field-bg-color);
+    
+    &:placeholder-shown{
+        background-color: var(--form-field-bg-color);
+    }
+    
+    &::placeholder{
+        color: var(--form-field-placeholder);
+    }
+    
+    &:focus
+    &:focus-visible,
+    &:focus-within,
+    &:active{
+        background-color: var(--form-field-bg-color);
+    }
+}

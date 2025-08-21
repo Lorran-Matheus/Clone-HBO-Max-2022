@@ -1,0 +1,39 @@
+@use '../abstracts/' as *;
+
+.footer {
+  @include setDisplay(flex, column, null, center);
+  position: relative;
+
+
+  &__links {
+    margin-top: 3.5rem;
+    @include setDisplay(flex, row, center, center);
+    flex-wrap: wrap;
+  }
+
+  &__hosting {
+    padding: 0 1rem;
+    margin: .3rem;
+    color: var(--link-color);
+    text-decoration: none;
+  }
+
+  &__hosting:hover {
+    color: var(--text-color);
+    transition: .5s;
+  }
+
+  &__direitos p {
+    padding: 0 1.8rem;
+    margin: 1.5rem 0;
+    color: var(--link-color);
+  }
+
+  &__redes {
+    margin: 2rem 0;
+  }
+
+  &__items {
+    margin: 0 1rem;
+  }
+}

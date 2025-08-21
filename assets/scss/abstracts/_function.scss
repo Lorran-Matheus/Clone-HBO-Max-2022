@@ -1,0 +1,15 @@
+@function setPaddingREM($v1, $v2: null, $v3: null, $v4: null) {
+    @if $v2 == null and $v3 == null and $v4 == null {
+        @return #{$v1}rem;
+    }
+    @else if $v3 == null and $v4 == null {
+        @return #{$v1}rem #{$v2}rem;
+    }
+    @else if $v4 == null {
+        @return #{$v1}rem #{$v2}rem #{$v3}rem;
+    }
+    @else {
+        @return #{$v1}rem #{$v2}rem #{$v3}rem #{$v4}rem;
+    }
+}
+

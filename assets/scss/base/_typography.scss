@@ -1,0 +1,109 @@
+@use '../abstracts/index' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+p,
+.quicksand {
+    font-family: "Quicksand", sans-serif;
+}
+
+.raleway {
+    font-family: "Raleway", sans-serif;
+}
+
+h3 {
+    font-size: 1.46rem;
+}
+
+.small-text {
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.title {
+    padding: 0 1.5rem;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.large-text {
+    font-size: 3rem;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.align__center {
+    text-align: center;
+}
+
+//home.scss
+.content__item:nth-child(4) span {
+    font-weight: normal;
+}
+
+
+.third__container {
+    text-align: center;
+}
+
+//login.scss
+.button {
+    font-weight: 700;
+}
+
+.subscription__text {
+    font-size: 1.25rem;
+
+    &::marker {
+        font-size: 2rem;
+        color: var(--secondary-color);
+    }
+}
+
+
+.form__item:nth-child(1) {
+    font-size: 1.5rem;
+}
+
+.login__title {
+    font-size: 1.25rem;
+}
+
+//main.scss
+.subscription-price {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header {
+    &__item.login {
+        font-size: .75rem;
+        letter-spacing: 1.5px;
+    }
+
+    &__button {
+        font-size: .75rem;
+        letter-spacing: 1.5px;
+    }
+}
+
+.footer {
+    &__hosting {
+        font-weight: 600;
+        font-size: .875rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    &__direitos p {
+        font-size: .7rem;
+        text-align: center;
+    }
+}

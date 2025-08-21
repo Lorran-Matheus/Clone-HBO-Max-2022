@@ -1,0 +1,54 @@
+
+.button {
+    padding: 1rem 2.5rem;
+    border-radius: 31.25rem;
+    color: var(--text-color);
+    transition: moveBackground 1.2s, outline 1s, transform 1s;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
+    border: none;
+    cursor: pointer;
+
+    background: var(--btn-bg-color-gradient);
+    outline: 3px solid transparent;
+    transition: moveBackground 1.2s, outline 1s, transform 1s;
+    background-size: 250%;
+
+    &:hover {
+        background-color: transparent;
+        background-position: 100%;
+        outline: 2px solid var(--secondary-color);
+        transform: scale(1.05);
+        transition: 1.2s;
+    }
+}
+
+.wiggle-button {
+    animation: moveButton 2s ease-in-out infinite;
+    background: var(--btn-bg-color-gradient);
+    background-size: 250%;
+    
+    &:hover {
+        background-color: transparent;
+        background-position: 100%;
+        outline: 2px solid var(--secondary-color);
+        transition: 1.2s;
+    }
+}
+
+
+.card__button {
+    background: var(--btn-bg-color-gradient);
+    outline: 3px solid transparent;
+    transition: moveBackground 1.2s, outline 1s, transform 1s;
+    background-size: 250%;
+    
+    &:hover {
+        background-color: transparent;
+        background-position: 100%;
+        outline: 2px solid var(--secondary-color);
+        transform: scale(1.05);
+        transition: 1.2s;
+    }
+}

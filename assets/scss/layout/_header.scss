@@ -1,0 +1,77 @@
+@use '../abstracts/' as *;
+
+.header{
+
+  &__container {
+    margin: 0;
+    z-index: 4;
+    padding: setPaddingREM(.8, 1);
+    width: 100vw;
+    height: 3.4rem;
+    background-color: var(--nav-bg-color);
+    position: fixed;
+    top: 0;
+  
+    @include setDisplay(flex, row, space-between, center);
+  }
+  
+  &__container__right {
+    @include setDisplay(flex, row, space-between, center);
+    gap: 1rem;
+  }
+  
+  &__item {
+    padding: 3px;
+    cursor: pointer;
+  }
+  
+  &__item a {
+    color: var(--btn-link-bg-color);
+  }
+  
+  &__item a:hover {
+    color: var(--btn-link-color);
+  }
+  
+  &__item.logo img {
+    width: 10rem;
+    height: 100%;
+  }
+  
+  &__item.login a:visited,
+  &__item.login a:link {
+    color: var(--text-color)
+  }
+  
+  &__button {
+    padding: .4rem;
+    margin-right: 2.3rem;
+    width: 162.55px;
+    height: 30px;
+    color: var(--btn-link-bg-color);
+    background-color: var(--tertiary-color);
+    border-radius: 2rem;
+    border: none;
+  
+    transition: 1s;
+  }
+  
+  &__button:hover,
+  &__button a:hover {
+    background-color: var(--btn-link-bg-color);
+    color: var(--btn-link-color);
+  }
+  
+  &__button:hover,
+  &__item.login:hover {
+    filter: drop-shadow(3px 3px 15px #76289c);
+    transition: .5s;
+  }
+  
+  .subscription__header {
+      padding: 0;
+  
+      @include setDisplay(flex, row, space-between, center);
+      margin-bottom: 1rem;
+  }
+}
